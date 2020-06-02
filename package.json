@@ -1,9 +1,9 @@
 {
-  "name": "paper-kit-2-pro",
-  "description": "Premium Bootstrap 4 Paper Design",
-  "version": "2.3.0",
-  "homepage": "http://creative-tim.com/product/paper-kit-2-pro",
-  "author": "Creative Tim",
+  "name": "ivy-innovation-home",
+  "description": "Home page for Ivy Innovation (Pty) Ltd",
+  "version": "1.1.0",
+  "homepage": "http://ivy-innovation.com",
+  "author": "Ivy Innovation",
   "license": "Creative Tim License <www.creative-tim.com/license>",
   "devDependencies": {
     "gulp": "^4.0.2",
