@@ -2473,7 +2473,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   text-transform: uppercase; }
 
 .description {
-  color: #9A9A9A; }
+  /* color: #9A9A9A; */
+  /* color: 'white'; */
+  color: #000000;
+}
 
 blockquote small {
   font-style: normal; }
@@ -9290,7 +9293,7 @@ body {
 
 #cd-vertical-nav {
   position: fixed;
-  right: -78px;
+  right: -180px;
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
