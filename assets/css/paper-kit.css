@@ -8284,7 +8284,7 @@ a.pswp__share--download:hover {
     border-width: 40px 20px;
     box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.08); }
   .section-isometricGrids .first-card {
-    top: -20px !important; }
+    top: 20px !important; }
   .section-isometricGrids .first-card .layer:not(img) {
     height: 260px !important;
     width: 365px !important;
