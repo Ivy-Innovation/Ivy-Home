@@ -3060,7 +3060,7 @@ pre.prettyprint {
 }
 
 .fourth-card {
-  top: 490px !important;
+  top: 460px !important;
 }
 
 .fourth-card .grid__img {
@@ -3069,7 +3069,7 @@ pre.prettyprint {
 }
 
 .fifth-card {
-  top: 360px !important;
+  top: 480px !important;
   left: 400px !important;
 }
 
@@ -3078,11 +3078,11 @@ pre.prettyprint {
 }
 
 .sixth-card {
-  top: 1070px !important;
+  top: 800px !important;
 }
 
 .seventh-card {
-  top: 875px !important;
+  top: 750px !important;
 }
 
 .seventh-card .grid__img {
