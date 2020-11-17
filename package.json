@@ -1,7 +1,7 @@
 {
   "name": "ivy-innovation-home",
   "description": "Home page for Ivy Innovation (Pty) Ltd",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "http://ivy-innovation.com",
   "author": "Ivy Innovation",
   "license": "Creative Tim License <www.creative-tim.com/license>",
@@ -13,5 +13,8 @@
     "gulp-open": "^3.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
   }
 }

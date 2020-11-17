@@ -22,6 +22,7 @@ gulp.task("compile-scss", () => {
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write(Paths.HERE))
+    .pipe(sourcemaps.write(Paths.PAGES))
     .pipe(gulp.dest(Paths.CSS));
 });
 
@@ -29,11 +30,7 @@ gulp.task("compile-scss", () => {
 var configuration = {
   paths: {
       src: {
-          html: './src/*.html',
-          css: [
-              './src/css/bootstrap.min.css',
-              './src/css/main.css'
-          ]
+          html: './pages/*.html',
       },
       dist: './dist'
   }
@@ -53,4 +50,4 @@ gulp.task("open", () => {
   gulp.src("index.html").pipe(open());
 });
 
-gulp.task("open-app", gulp.series('open', 'watch'));
+gulp.task("open-app", gulp.series('open', 'watch', 'html'));
