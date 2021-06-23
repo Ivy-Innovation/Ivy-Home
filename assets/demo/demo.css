@@ -6,6 +6,8 @@
  * Copyright (c) 2018 Daniel Eden
  */
 
+ /* Biolerplate */
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;

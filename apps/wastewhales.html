@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img//apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/notify-me/notify-me-icon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    WasteWhales - Ivy Innovation
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-kit.css?v=2.3.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+
+  <!-- Own script -->
+  <script>
+    window.onload = function() {
+
+      let platform = "other";
+
+      if( /Android/i.test(navigator.userAgent) ) {
+        platform = "Android";
+      }
+
+      if( /iPhone|iPad|Mac|Macintosh|iPod/i.test(navigator.userAgent) ) {
+        platform = "Apple";
+      }
+      
+      if (platform != "other") {
+        let dType = document.getElementById("modalPlatform");
+        dType.innerHTML += platform;
+      }
+    }
+  </script>
+</head>
+
+<body class="product-page sidebar-collapse">
+  <!-- Navbar -->
+  
+  <nav class="navbar nav-down navbar-absolute navbar-transparent">
+    <div class="container">
+      <div class="navbar-translate">
+        <a
+          class="navbar-brand"
+          rel="tooltip"
+          href="https://ivy-innovation.com"
+          title="Ivy"
+          data-placement="bottom"
+          target="_blank"
+          style = "
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 5px 16px 20px -7px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Ivy Innovation
+        </a>
+      </div>
+      <div
+        class="collapse navbar-collapse"
+        data-nav-image="assets/img/blurred-image-1.jpg"
+        data-color="orange"
+      >
+        <ul class="navbar-nav ml-auto">
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- End Navbar -->
+  <div class="page-header page-header-xs" style="background-image: url('../assets/img/wastewhales/banner.jpg');">
+    <div class="filter"></div>
+  </div>
+
+  <div class="main">
+    <div
+      style = "
+        position: absolute;
+        top: 50px;
+        right: 25%;
+        z-index: 1;
+      ">
+
+      <img
+        class="img-rounded img-responsive"
+        src="../assets/img/wastewhales/icon.png"
+        alt=""
+        style="
+          height: 100px;
+          width: 100px;
+          border-radius: 10px;
+          margin-bottom: -20px;
+          box-shadow: 5px 16px 20px -7px rgba(0, 0, 0, 0.7);
+        "
+      />
+
+      <h1
+        style = "
+          color: white;
+          background-color: rgba(0, 0, 0, 0.7);
+          border-radius: 10px;
+          padding: 5px;
+          box-shadow: 5px 16px 20px -7px rgba(0, 0, 0, 0.7);
+        ">
+        WasteWhales
+      </h1>
+    </div>
+
+    <div class="section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-7 col-sm-6">
+            <div id="carousel" class="ml-auto mr-auto">
+              <div class="card page-carousel" style = "box-shadow: 10px 16px 20px -7px rgba(0, 0, 0, 0.7);">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                  </ol>
+
+                  <div class="carousel-inner" role="listbox" style = "
+                    max-height: 700px;
+                    width: auto;
+                  ">
+
+                    <div class="carousel-item active" style = "
+                      margin-top: -55px;
+                    ">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_000.png" alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-item" style = "margin-top: -55px;">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_001.png" alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-item" style = "margin-top: -55px;">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_002.png" alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-item" style = "margin-top: -55px;">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_003.png" alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-item" style = "margin-top: -55px;">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_004.png" alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-item" style = "margin-top: -63px;">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_005.png" alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-item" style = "margin-top: -63px;">
+                      <img
+                        src="../assets/img/wastewhales/screenshots/File_006.png" alt=""
+                      />
+                    </div>
+
+                  </div>
+
+                  <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end carousel -->
+          </div>
+          <div class="col-md-5 col-sm-6">
+            <h2>Simplified Recycling</h2>
+            <!-- <h4 class="price"><strong>&euro; 2,900.00</strong></h4> -->
+            <h4 class="price"><strong>ZAR 0.00 (free)</strong></h4>
+            <hr />
+            <p style = "color: black">
+              WasteWhales makes recycling easy and rewarding!<br/><br/>
+
+              Simply separate your waste by type before placing it outside, then use
+              the WasteWhales Mobile App to notify a Collector that your waste is ready to be recycled.<br/><br/>
+
+              Voilà, your waste is collected and you earn points for making the world greener!<br/><br/>
+
+              Join the massive worldwide community of households and businesses
+              in their quest to make the world a cleaner, greener and happier place.
+            </p>
+
+            <hr />
+            <div class="row">
+              <div class="col-md-7 offset-md-5 col-sm-8">
+                <button class="btn btn-primary btn-block btn-round" data-toggle="modal" data-target="#classicModal" style = "box-shadow: 5px 7px 20px -7px rgba(0, 0, 0, 0.7);">Download &nbsp;<i class="fa fa-chevron-right"></i></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-dark">
+      <div class="container">
+        <div class="row card-body-row">
+          <div class="col-md-4 col-sm-4">
+            <div class="info">
+              <div class="icon icon-primary">
+                <i class="nc-icon nc-refresh-69"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Simplify Recycling</h4><br/>
+                <p>
+                  Place your Waste ready for Recycling and automatically get connected to a Collector for pickup. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="info">
+              <div class="icon icon-primary">
+                <i class="nc-icon nc-money-coins"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Earn Points</h4><br/>
+                <p>
+                  Get rewarded for recycling and use your points to buy items from our marketplace
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="info">
+              <div class="icon icon-primary">
+                <i class="nc-icon nc-mobile"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Cross-Platform<br/>Support</h4>
+                <p>
+                  WasteWhales works whether you have an Apple, or Android device
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <p style = "color: white;">Want to find out more about how we build our stuff?
+          <a class="link-info" href="https://ivy-innovation.com/#rapid_dev"><u>Learn more</u></a>
+        </p>
+        <hr />
+        
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">        
+        <div class="row add-row">
+          <div class="col-md-4 col-sm-4">
+            <!-- <h3 style = "margin-top: -4px;">Get the App Now</h3> -->
+            <h3 style = "margin-top: -4px;">Get the App</h3>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <h5>Apple App Store and Google Play Store</h5>
+            <p class="price"><strong>ZAR 0.00 (free)</strong></p><br/>
+            <!-- <p class="price"><strong>&euro; 975.00</strong></p> -->
+            <p>
+              <!-- The safest way to send automatic
+              notifications to friends, family, and coworkers.<br/><br/> -->
+              Cultivating a Passion for Simplified Recycling
+            </p>
+            <br/>
+            <button class="btn btn-primary btn-round" data-toggle="modal" data-target="#classicModal" style = "box-shadow: 5px 7px 20px -7px rgba(0, 0, 0, 0.7); margin-bottom: 15px;">Download</button>
+          </div>
+          <div class="col-md-3 ml-auto col-sm-4">
+            <img src="../assets/img/wastewhales/icon.png" alt="WasteWhales" class="img-rounded img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <div class="modal fade" id="classicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h5 class="modal-title text-center" id="exampleModalLabel">Beta Testing</h5>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            We are almost done with <span style = "color: #1565C0;">Beta Testing</span> to make sure you love the app once it's published.<br/><br/>
+            We'll let you know when WasteWhales is ready to Download on your <span id = "modalPlatform"></span> device!
+          </p>
+
+          <br/>
+
+          <div class="form-group">
+            <input type="text" value="" class="form-control" placeholder="Enter your email..." style = "color: #1565C0;">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <!-- <div class="left-side">
+            <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
+          </div>
+          <div class="divider"></div> -->
+          <div class="right-side">
+            <button type="button" class="btn btn-primary btn-link" data-dismiss="modal">Keep me Updated</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+
+    <!-- <div class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Similar Products</h4>
+            <br/>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="card card-product card-plain">
+              <div class="card-image">
+                <a href="#paper-kit">
+                  <img src="../assets/img/balmain-1.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                </a>
+                <div class="card-body">
+                  <div class="card-description">
+                    <h5 class="card-title">Double Breasted Mini Dress</h5>
+                    <p class="card-description">Dresses & Skirts</p>
+                  </div>
+                  <div class="actions">
+                    <h5>1.300 &euro;</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="card card-product card-plain">
+              <div class="card-image">
+                <a href="#paper-kit">
+                  <img src="../assets/img/balmain-2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                </a>
+                <div class="card-body">
+                  <div class="card-description">
+                    <h5 class="card-title">Chrystal Dress</h5>
+                    <p class="card-description">Dresses & Skirts</p>
+                  </div>
+                  <div class="actions">
+                    <h5>1.500 &euro;</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="card card-product card-plain">
+              <div class="card-image">
+                <a href="#paper-kit">
+                  <img src="../assets/img/balmain-3.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                </a>
+                <div class="card-body">
+                  <div class="card-description">
+                    <h5 class="card-title">Chrystal Skirt</h5>
+                    <p class="card-description">Only on demand</p>
+                  </div>
+                  <div class="actions">
+                    <h5>1.200 &euro;</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  
+  </div>
+
+  <footer class="footer footer-black">
+    <div class="section section-dark landing-section" id="contact">
+      <div class="container">
+        <div class="text-center" style="margin-top: 10px;">
+          <a class="btn btn-danger btn-link" href = "https://ivy-innovation.com/pages/notify-me-privacy-policy.html" target="_blank"><u>Privacy Policy</u></a>
+        </div>
+
+        <div class="text-center" style="margin-top: 10px;">
+          <a
+            href="https://www.facebook.com/Iv-101011714975828"
+            class="btn btn-link btn-just-icon btn-facebook"
+            target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/InnovationIvy"
+            class="btn btn-link btn-just-icon btn-twitter"
+            target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/ivy-innovation/"
+            class="btn btn-link btn-just-icon btn-linkedin"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="row py-3 text-center">
+          <div class="col" style="text-align: center">
+            Copyright © Ivy Innovation (Pty) Ltd
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+
+  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="../assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="../assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="../assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+  <!--	Plugin for Datetimepicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Vertical nav - dots -->
+  <!--  Photoswipe files -->
+  <script src="../assets/js/plugins/photo_swipe/photoswipe.min.js"></script>
+  <script src="../assets/js/plugins/photo_swipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/js/plugins/photo_swipe/init-gallery.js"></script>
+  <!--  for Jasny fileupload -->
+  <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/paper-kit.js?v=2.3.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!--  Plugin for presentation page - isometric cards  -->
+  <script src="../assets/js/plugins/presentation-page/main.js"></script>
+  
+</body>
+
+</html>
