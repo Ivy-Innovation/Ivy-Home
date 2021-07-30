@@ -21,44 +21,129 @@
 
   <!-- Own script -->
   <script>
+    goToAppStore = function () {
+      window.open("https://apps.apple.com/za/app/ivy-notifyme/id1539931256", "_blank");
+    }
+
     window.onload = function() {
 
       let platform = "other";
 
       if( /Android/i.test(navigator.userAgent) ) {
         platform = "Android";
+
+        let modal = document.getElementById("theModal");
+        modal.innerHTML += `
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5 class="modal-title text-center" id="exampleModalLabel">Beta Testing</h5>
+            </div>
+
+            <div class="modal-body">
+              <p>
+                We are almost done with <span style = "color: #28a745;">Beta Testing</span> to make sure you love the app once it's published.<br/><br/>
+                We'll let you know when NotifyMe is ready to Download on your <span id = "modalPlatform"></span> device!
+              </p>
+
+              <br/>
+
+              <div class="form-group">
+                <input type="text" value="" class="form-control" placeholder="Enter your email..." style = "color: #28a745;">
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <!-- <div class="left-side">
+                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
+              </div>
+              <div class="divider"></div> -->
+              <div class="right-side">
+                <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Keep me Updated</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
       }
 
       if( /iPhone|iPad|Mac|Macintosh|iPod/i.test(navigator.userAgent) ) {
         platform = "Apple";
+
+        let modal = document.getElementById("theModal");
+        modal.innerHTML += `
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title text-center" id="exampleModalLabel">First iOS Launch Complete!</h5>
+          </div>
+  
+          <div class="modal-body">
+            <p>
+              We just launched the first version of <span style = "color: #28a745;">NotifyMe for iOS!</span><br/><br/>
+              Click the link below to download via the Apple App Store.
+            </p>
+  
+            <br/>
+          </div>
+  
+          <div class="modal-footer" onclick="goToAppStore()">
+            <div class="right-side">
+              <a type="button" class="btn btn-danger btn-link" data-dismiss="modal" >Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        `;
       }
       
       if (platform != "other") {
         let dType = document.getElementById("modalPlatform");
         dType.innerHTML += platform;
+
+        let aM = document.getElementById("androidModal");
+        aM.innerHTML += `
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5 class="modal-title text-center" id="exampleModalLabel">Beta Testing</h5>
+            </div>
+
+            <div class="modal-body">
+              <p>
+                We are almost done with <span style = "color: #28a745;">Beta Testing</span> to make sure you love the app once it's published.<br/><br/>
+                We'll let you know when NotifyMe is ready to Download on your <span id = "modalPlatform"></span> device!
+              </p>
+
+              <br/>
+
+              <div class="form-group">
+                <input type="text" value="" class="form-control" placeholder="Enter your email..." style = "color: #28a745;">
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <!-- <div class="left-side">
+                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
+              </div>
+              <div class="divider"></div> -->
+              <div class="right-side">
+                <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Keep me Updated</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
       }
-
-      // document.querySelectorAll('#download').forEach(item => {
-        // item.addEventListener('click', event => {
-          // if( /Android/i.test(navigator.userAgent) ) {
-          //   // some code..
-          //   // alert("Hiiii android");
-          //   platform = "Android";
-          // }
-
-          // if( /iPhone|iPad|Mac|Macintosh|iPod/i.test(navigator.userAgent) ) {
-          //   // some code..
-          //   // alert("Hiiii Apple");
-          //   platform = "Apple";
-          // }
-
-          // if( /webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-          //   // some code..
-          //   // alert("Hiiii, not supported yet");
-          //   // platform = "android";
-          // }
-        // })
-      // })
     }
   </script>
 </head>
@@ -85,19 +170,6 @@
         >
           Ivy Innovation
         </a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navigation"
-          aria-controls="navigation-index"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
-        </button> -->
       </div>
       <div
         class="collapse navbar-collapse"
@@ -427,41 +499,38 @@
 
     
   <div class="modal fade" id="classicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      
+    <div id = "theModal">
+    </div>
+  </div>  
+  
+  <!-- <div class="modal fade" id="classicModalIOS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h5 class="modal-title text-center" id="exampleModalLabel">Beta Testing</h5>
+          <h5 class="modal-title text-center" id="exampleModalLabel">First iOS Launch Complete!</h5>
         </div>
 
         <div class="modal-body">
           <p>
-            We are almost done with <span style = "color: #28a745;">Beta Testing</span> to make sure you love the app once it's published.<br/><br/>
-            We'll let you know when NotifyMe is ready to Download on your <span id = "modalPlatform"></span> device!
+            We just launched the first version of NotifyMe for iOS!<br/><br/>
+            Click the link below to download via the Apple App Store.
           </p>
 
           <br/>
-
-          <div class="form-group">
-            <input type="text" value="" class="form-control" placeholder="Enter your email..." style = "color: #28a745;">
-          </div>
         </div>
 
         <div class="modal-footer">
-          <!-- <div class="left-side">
-            <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
-          </div>
-          <div class="divider"></div> -->
           <div class="right-side">
-            <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Keep me Updated</button>
+            <a type="button" class="btn btn-danger btn-link" data-dismiss="modal">Download</a>
           </div>
         </div>
       </div>
     </div>
-  </div>   
-
+  </div>   -->
 
     <!-- <div class="section section-dark">
       <div class="container">
